@@ -1,0 +1,81 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}
+Регистрация школы
+{% endblock %}
+{% block css %}
+    <link href= "{% static 'css/main_singup.css' %}" rel="stylesheet" media="all">
+{% endblock %}
+
+{% block content %}
+    <div class="page-wrapper bg-dark p-t-100 p-b-50">
+        <div class="wrapper wrapper--w900">
+            <div class="card card-6 border-0">
+                <div class="card-heading">
+                    <h2 class="title">Регистрация школы</h2>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        {% csrf_token %}
+                    
+                        <div class="form-row">
+                            <div class="name">Полное наименование организации:</div>
+                            <div class="value">
+                                <input class="input--style-6" type="text" name="full_name">
+                            </div>
+                        </div>
+                           <div class="form-row">
+                            <div class="name">Краткое наименование организации:</div>
+                            <div class="value">
+                                <input class="input--style-6" type="text" name="short_name">
+                                
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Регион:</div>
+                            <div class="value">
+                                <input class="input--style-6" type="text" name="region">
+                            </div>
+                        </div>
+                         <div class="form-row">
+                            <div class="name">Городской округ / Муниципальный район:</div>
+                            <div class="value">
+                                <input class="input--style-6" type="text" name="district">
+                            </div>
+                        </div>
+                         <div class="form-row">
+                            <div class="name">Населённый пункт:</div>
+                            <div class="value">
+                                <input class="input--style-6" type="text" name="inhabited_locality">
+                            </div>
+                        </div>
+                         <div class="form-row">
+                            <div class="name">Телефон:</div>
+                            <div class="value">
+
+                                <input class="input--style-6" type="text" name="phone">
+                            </div>
+                        </div>
+                        
+
+
+                        <div class="form-row">
+                            <div class="name">Email школы</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-6" type="email" name="email" placeholder="example@email.com">
+                                </div>
+                            </div>
+                        </div>
+                            <div class="card-footer">
+                                <button class="btn btn--radius-2 btn--blue-2" type="submit">Отправить</button>
+                            </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+{% endblock %}
+  
+

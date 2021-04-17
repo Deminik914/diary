@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+header h1 {
+    position: absolute;
+    width: 75px;
+    height: 34px;
+    left: 406px;
+    top: 138px;
+
+    font-family: Arimo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 34px;
+
+    color: #000000;
+
+
+}
+
+
+
+
+.content {
+    position: absolute;
+    width: 628px;
+    height: 467px;
+    left: 406px;
+    top: 187px;
+    margin-top: 15px;
+    background: linear-gradient(120.83deg, #252525 1.58%, rgba(237, 234, 234, 0.0364583) 119.73%, rgba(128, 128, 128, 0.0364584) 119.74%, rgba(181, 181, 181, 0.0364583) 119.75%, rgba(167, 165, 165, 0) 119.75%, rgba(137, 137, 137, 0.0364583) 119.75%);
+    border-radius: 12px;
+}
+ table{
+
+     margin-top: 50px;
+    margin-left: 30px;
+     border-spacing: 50px 100px;
+ }
+
+table input{
+    width: 335px;
+    height: 26px;
+    border-radius:5px ;
+    border-color: white;
+}
+
+
+table p {
+     font-family: Arimo;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 14px;
+     line-height: 16px;
+    color: #fff;
+ }
+
+
+
+
+.login{
+    width: 194px;
+    height: 48px;
+    left: 711px;
+    top: 523px;
+    margin: 100px 210px 83px 305px;
+
+    background: #A8BDB3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+}
